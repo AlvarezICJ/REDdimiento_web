@@ -15,9 +15,9 @@ def make_request(url):
         print(f"Request to {url} failed: {e}")
         server_down = True  # Se establece la variable global en True si ha habido una excepción
 
-# URL y número de solicitudes
-url = "https://www.example.com"
-num_requests = 100
+# Pedir URL y número de solicitudes
+url = input("Ingresa la URL del sitio web: ")
+num_requests = int(input("Ingresa el número de solicitudes a realizar: "))
 
 # Se ejecutan las solicitudes en threads separados
 for i in range(num_requests):
